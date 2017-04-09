@@ -25,9 +25,10 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Elm</h1>
+					<h1>elm</h1>
+					<img src="img/elmLogo.png"></img>
 				</section>
-				<section data-background="img/loop1.gif" data-background-repeat="repeat" data-background-size="600px">
+				<section data-background-transition="zoom" data-background="img/loop1.gif" data-background-repeat="repeat" data-background-size="600px">
 					<h1>Javascript</h1>
 				</section>
 				<section>
@@ -71,6 +72,10 @@ view model =
 				</section>
 				<section>
 					<a href="http://elm-lang.org/examples/buttons">Um exemplo simples</a>
+					<div width="80%" height="80%">
+					     <iframe width="100%" height="500px" style="background-color: white;" src="http://elm-lang.org/examples/buttons"></iframe>
+					</div>
+					<a href="#/10">...</a>
 				</section>
 				<section>
 					<h3>Msg</h3>
@@ -82,7 +87,6 @@ type Msg = Increment | Decrement
 				<section>
 					<h3>View</h3>
 					<p>Renderiza a página dado o model, não altera model</p>
-					<p>Exemplo de div com dois botões e um model do tipo inteiro</p>
 					<pre><code data-trim>
 view : Int -> Html Msg
 view model = div [] [
@@ -107,6 +111,26 @@ update msg model = case msg of
     Increment -> model + 1
     Decrement -> model - 1
 </code></pre>
+				</section>
+				<section>
+					<h2>Adicionando double</h2>
+					<a href="#/6">Exemplo Simples</a>
+				</section>
+				<section>
+					<h1>Reactor - Time Travelling Debugger</h1>
+					<h2>Jogo dos animais</h2>
+				</section>
+				<section>
+					<h1>Greement Board Game</h1>
+					<h2>Um exemplo com varios módulos e diferentes telas</h2>
+				</section>
+				<section>
+					<h2>Perguntas?</h2>
+					<p>Links:</p>
+					<ul>
+						<li><a href="http://elm-lang.org/">elm-lang.org</a></li>
+						<li><a href="https://github.com/beothorn/greement">github.com/beothorn/greement</a></li>
+					</ul>
 				</section>
 			</div>
 		</div>
